@@ -88,7 +88,7 @@ extern "C"
     // #### Public Type(s) #########################################################
     // #############################################################################
 
-    typedef struct TMR_Instance_Context_t TMR_Instance_Context_t;
+    typedef struct TMR_InstanceContext_t TMR_InstanceContext_t;
 
     typedef struct TMR_Instance
     {
@@ -96,7 +96,7 @@ extern "C"
 
         union
         {
-            TMR_Instance_Context_t * Context;
+            TMR_InstanceContext_t * Context;
             TMR_STM32L496VGT6P_Instance_t * STM32L496VGT6P;
         };
     } TMR_Instance_t;
